@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_venue/provider/cart_provider.dart';
 import 'package:shop_venue/screens/cart_screen.dart';
+import 'package:shop_venue/widgets/app_drawer.dart';
 import 'package:shop_venue/widgets/badge.dart';
 
 import 'package:shop_venue/widgets/product_grid.dart';
@@ -20,6 +21,7 @@ class _ProductOverviewScreenState extends State<ProductOverviewScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        drawer: AppDrawer(),
         appBar: AppBar(
           title: Text("Shop Venue"),
           centerTitle: true,
